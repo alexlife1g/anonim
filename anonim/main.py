@@ -1,4 +1,6 @@
 import asyncio
+import aiohttp
+import logging
 import csv
 import os
 from aiogram import Bot, Dispatcher, F
@@ -299,3 +301,4 @@ if __name__ == "__main__":
         asyncio.run(dp.start_polling(bot))
     except (KeyboardInterrupt, SystemExit):
         print("Бот зупинено")
+
